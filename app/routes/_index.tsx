@@ -1,17 +1,43 @@
-import type { MetaFunction } from "@remix-run/node";
-import { Button } from "~/components/ui/button";
+import type { ActionFunctionArgs, MetaFunction } from "@remix-run/node";
+import { json } from "@remix-run/react";
+import About from "~/components/about";
+import Features from "~/components/features";
+import Hero from "~/components/hero";
+import NavigationBar from "~/components/navbar";
+import Pricing from "~/components/pricing";
+import { createSupabaseServerClient } from "~/lib/supabase/supabase.server";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Minister Kenya" },
+    { name: "description", content: "Your Digital Lamp On The Hill" },
   ];
 };
 
+export const action = async ({ request }: ActionFunctionArgs) => {
+
+  const formData = await request.formData();
+  const email = formData.get("email") as string;
+
+  const response = new Response();
+
+  const client = createSupabaseServerClient({ request, response });
+
+  const res = await client.from("invites").upsert({ email });
+  // console.log({ res });
+
+  return json({ res })
+};
+
 export default function Index() {
+  // const data = useActionData<typeof action>()
   return (
-    <div className="bg-black text-white flex align-middle items-center h-screen">
-      <Button variant={"destructive"} onClick={() => alert("button clicked")}>Hello</Button>
-    </div>
+    <>
+      <NavigationBar />
+      <Hero />
+      <About />
+      <Features />
+      <Pricing />
+    </>
   );
 }
