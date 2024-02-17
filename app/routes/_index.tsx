@@ -1,4 +1,4 @@
-import type { ActionFunctionArgs, MetaFunction } from "@remix-run/node";
+import type { ActionFunctionArgs, MetaFunction } from "@vercel/remix";
 import { json } from "@remix-run/react";
 import About from "~/components/about";
 import Features from "~/components/features";

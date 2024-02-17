@@ -4,7 +4,7 @@ import type {
 	LinksFunction,
 	LoaderFunction,
 	LoaderFunctionArgs,
-} from "@remix-run/node";
+} from "@vercel/remix";
 import {
 	Links,
 	LiveReload,
