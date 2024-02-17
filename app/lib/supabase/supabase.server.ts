@@ -1,4 +1,5 @@
 import { createServerClient } from "@supabase/auth-helpers-remix";
+import { env } from '~/lib/env'
 import { Database } from "~/types/database.types"
 
 export const createSupabaseServerClient = ({
@@ -9,7 +10,7 @@ export const createSupabaseServerClient = ({
     response: Response;
 }) =>
     createServerClient<Database>(
-        process.env.SUPABASE_URL!,
-        process.env.SUPABASE_PUBLIC_KEY!,
+        env.SUPABASE_URL,
+        env.SUPABASE_PUBLIC_KEY,
         { request, response }
     )
