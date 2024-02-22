@@ -6,6 +6,8 @@ import Hero from "~/components/hero";
 import NavigationBar from "~/components/navbar";
 import Pricing from "~/components/pricing";
 import { createSupabaseServerClient } from "~/lib/supabase/supabase.server";
+import Footer from "~/components/footer";
+import Contact from "~/components/contact";
 
 export const meta: MetaFunction = () => {
   return [
@@ -38,6 +40,8 @@ export default function Index() {
       <About />
       <Features />
       <Pricing />
+      <Contact />
+      <Footer />
     </>
   );
 }

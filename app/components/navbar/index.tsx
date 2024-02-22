@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 const NavigationBar: React.FC<object> = () => {
   return (
     <nav
-      className={`shadow-custom fixed top-0 z-20 w-full transform px-14 pb-2 pt-2 transition-all duration-200 ease-in-out min-[375px]:px-3 min-[425px]:px-4 min-[768px]:px-5 min-[1024px]:px-8 bg-gray-900`}
+      className={`shadow-custom fixed top-0 z-20 w-full transform px-14 pb-2 pt-2 transition-all duration-200 ease-in-out min-[375px]:px-3 min-[425px]:px-4 min-[768px]:px-5 min-[1024px]:px-8 bg-black`}
     >
       <div className="mx-auto flex items-center justify-between px-4 py-2">
         <a href="/" className="flex items-center">

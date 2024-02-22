@@ -4,7 +4,7 @@ import { CheckIcon } from '@radix-ui/react-icons'
 const Pricing: React.FC<object> = () => {
   return (
     <section
-      className="border-slate-600 bg-black text-white lg:h-[100vh] xl:h-[90vh]"
+      className="bg-black text-white lg:h-[100vh] xl:h-[90vh]"
       id="pricing"
     >
       <div className="container mx-auto flex flex-col pt-10 lg:pt-12">

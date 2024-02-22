@@ -25,7 +25,7 @@ const Features: React.FC<object> = () => {
       <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:px-32">
         <div className="col-span-3 grid grid-cols-1 grid-rows-6 gap-8 md:grid-cols-3 md:grid-rows-2">
           <div className="rows-span-1 col-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-5 py-12 text-center shadow-xl bg-gray-900 sm:px-8">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-5 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 sm:px-8">
               <div className="flex justify-center">
                 <DesktopIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
               </div>
@@ -40,7 +40,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="rows-span-1 col-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
                 <AvatarIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
               </div>
@@ -55,7 +55,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="cols-span-1 rows-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
                 <Link2Icon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
               </div>
@@ -67,7 +67,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="rows-span-1 col-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 ">
               <div className="flex justify-center">
                 <QuestionMarkCircledIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
               </div>
@@ -79,7 +79,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="cols-span-1 rows-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
                 <BackpackIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
               </div>
@@ -94,7 +94,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="cols-span-1 rows-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
                 <DashboardIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
               </div>
