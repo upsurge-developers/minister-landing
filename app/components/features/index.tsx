@@ -6,6 +6,8 @@ import {
   Link2Icon,
   QuestionMarkCircledIcon,
 } from "@radix-ui/react-icons";
+
+import { IconAddressBook, IconCash, IconDeviceDesktop, IconHeartHandshake, IconLayoutDashboard, IconNetwork, IconUsersGroup } from "@tabler/icons-react"
 import React from "react";
 
 const Features: React.FC<object> = () => {
@@ -27,7 +29,7 @@ const Features: React.FC<object> = () => {
           <div className="rows-span-1 col-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-5 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 sm:px-8">
               <div className="flex justify-center">
-                <DesktopIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
+                <IconDeviceDesktop className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">
                 Content Management
@@ -42,7 +44,7 @@ const Features: React.FC<object> = () => {
           <div className="rows-span-1 col-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
-                <AvatarIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
+                <IconAddressBook className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">
                 Congregant Directory
@@ -57,7 +59,7 @@ const Features: React.FC<object> = () => {
           <div className="cols-span-1 rows-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
-                <Link2Icon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
+                <IconNetwork className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">Direct Connection</h3>
               <p className="mx-5 mt-2 text-center text-sm">
@@ -69,7 +71,7 @@ const Features: React.FC<object> = () => {
           <div className="rows-span-1 col-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 ">
               <div className="flex justify-center">
-                <QuestionMarkCircledIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
+                <IconHeartHandshake className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">Prayer Requests</h3>
               <p className="mx-5 mt-2 text-center text-sm">
@@ -81,7 +83,7 @@ const Features: React.FC<object> = () => {
           <div className="cols-span-1 rows-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
-                <BackpackIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
+                <IconCash className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">
                 Financial Management
@@ -96,7 +98,7 @@ const Features: React.FC<object> = () => {
           <div className="cols-span-1 rows-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
-                <DashboardIcon className="animate-slow-bounce rounded-full p-1 text-center text-6xl" />
+                <IconLayoutDashboard className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">
                 User-friendly Interface
