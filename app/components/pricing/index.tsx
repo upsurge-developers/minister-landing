@@ -1,5 +1,13 @@
-import React from 'react'
-import { CheckIcon } from '@radix-ui/react-icons'
+import React from "react";
+import { IconCheck } from "@tabler/icons-react";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "~/components/ui/card";
+import { Button } from "../ui/button";
 
 const Pricing: React.FC<object> = () => {
   return (
@@ -17,128 +25,155 @@ const Pricing: React.FC<object> = () => {
             need
           </p>
         </div>
-        <div className="mx-auto mt-10 flex flex-col items-center gap-0 lg:mt-20 lg:flex-row">
-          <div className=" border-primary-400 xs:w-[340px] z-0 flex h-[480px] w-[330px] transform flex-col rounded-lg border-[1px] p-5 pr-0 transition-transform duration-300 ease-in-out sm:w-[350px] sm:hover:scale-105 lg:w-[330px] lg:rounded-b-none lg:rounded-t-lg lg:border-b-0 lg:border-r-0">
-            <h4 className="text-primary-500 shadow-customPricing -ml-2 mb-7 w-full border-b-[1px] border-t-[1px] py-2 text-center text-[30px] font-semibold">
-              Basic
-            </h4>
-            <ul className=" my-auto w-full">
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Up to 1000 Congregants
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-              <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Up to 25 Groups
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                5 group limit for each Congregant
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Up to 1000 notifications
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Up to 1000 events
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Text only devotions and Sermons
-              </li>
-            </ul>
-            <p className="text-primary-500 border-primary-300 relative mx-auto my-auto w-fit border-l-2 border-r-2 px-3 text-center text-base">
-              <span className="text-lg font-light">Ksh.</span>
-              <span className="text-2xl font-semibold">2500</span>
-              <span className="text-lg font-light text-gray-600">/month</span>
-            </p>
-            <button className="border-primary-400 shadow-customPricing hover:bg-primary-500 mx-auto w-fit transform cursor-pointer rounded-3xl border-2 px-5 py-2 transition-colors duration-300 ease-in-out">
-              GET NOW
-            </button>
-          </div>
-          <div className=" border-primary-400 shadow-customPricing xs:shadow-customSides xs:w-[370px] z-10 -mb-2 -mt-2 flex h-[500px] w-[350px] transform flex-col rounded-lg border-[1px] p-5 pb-7 pr-0 transition-transform duration-300 ease-in-out dark:bg-slate-900 sm:w-[382px] sm:hover:scale-105 lg:-mb-0 lg:-ml-1 lg:-mr-1 lg:-mt-5 lg:w-[350px] lg:rounded-t-lg">
-            <h4 className="text-primary-500 shadow-customPricing -ml-2 mb-7 w-full border-b-[1px] border-t-[1px] py-2 text-center text-[30px] font-semibold">
-              Advanced
-            </h4>
-            <ul className=" my-auto w-full">
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Up to 5000 Congregants
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Up to 50 Groups
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                10 group limit for each Congregant
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Unlimited notifications
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Unlimited events
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Text + audio devotions and Sermons
-              </li>
-            </ul>
-            <p className="text-primary-500 border-primary-300 relative mx-auto my-auto w-fit border-l-2 border-r-2 px-3 text-center text-base">
-              <span className="text-lg font-light">Ksh.</span>
-              <span className="text-2xl font-semibold">5000</span>
-              <span className="text-lg font-light text-gray-600">/month</span>
-            </p>
-            <button className="border-primary-400 hover:bg-primary-500 shadow-customPricing mx-auto w-fit transform cursor-pointer rounded-3xl border-2 px-5 py-2 transition-colors duration-300 ease-in-out">
-              GET NOW
-            </button>
-          </div>
-          <div className=" border-primary-400 xs:w-[340px] z-0 flex  h-[480px] w-[330px] transform flex-col rounded-lg border-[1px] p-5 pr-0 transition-transform duration-300 ease-in-out dark:bg-slate-900 sm:w-[350px] sm:hover:scale-105 lg:w-[330px] lg:rounded-b-none lg:rounded-t-lg lg:border-b-0 lg:border-l-0">
-            <h4 className="text-primary-500 shadow-customPricing -ml-2 mb-7 w-full border-b-[1px] border-t-[1px] py-2 text-center text-[30px] font-semibold">
-              Premium
-            </h4>
-            <ul className=" my-auto w-full">
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Unlimited Congregants
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Unlimited Groups
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Unlimited group limit for each Congregant
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Unlimited notifications
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Unlimited events
-              </li>
-              <li className="mb-2 flex flex-row align-middle">
-                <CheckIcon className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
-                Text, audio and video devotions and Sermons
-              </li>
-            </ul>
-            <p className="text-primary-500 border-primary-300 relative mx-auto my-auto w-fit border-l-2 border-r-2 px-3 text-center text-base">
-              <span className="text-lg font-light">Ksh.</span>
-              <span className="text-2xl font-semibold">7500</span>
-              <span className="text-lg font-light text-gray-600">/month</span>
-            </p>
-            <button className="border-primary-400 shadow-customPricing hover:bg-primary-500 mx-auto w-fit transform cursor-pointer rounded-3xl border-2 px-5 py-2 transition-colors duration-300 ease-in-out">
-              GET NOW
-            </button>
-          </div>
+        <div className="mx-auto mt-10 flex flex-col items-center gap-2 lg:mt-20 lg:flex-row">
+          <Card className="bg-neutral-950 text-white">
+            <CardHeader>
+              <CardTitle className="mb-7 w-full py-2 text-center text-3xl font-semibold">
+                Basic
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className=" my-auto w-full">
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Up to 1000 Congregants
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Up to 25 Groups
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  5 group limit for each Congregant
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Up to 1000 notifications
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Up to 1000 events
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Text only devotions and Sermons
+                </li>
+              </ul>
+            </CardContent>
+            <CardFooter className="flex flex-col">
+              <p className="relative mx-auto my-auto w-fit px-3 text-center text-base">
+                <span className="text-lg font-light">Ksh.</span>
+                <span className="text-2xl font-semibold">2500</span>
+                <span className="text-lg font-light text-gray-600">/month</span>
+              </p>
+              <Button
+                variant="ghost"
+                className="mx-auto mt-2 w-fit cursor-pointer rounded-3xl px-5 py-2 border border-gray-400"
+              >
+                GET NOW
+              </Button>
+            </CardFooter>
+          </Card>
+          <Card className="bg-neutral-950 text-white">
+            <CardHeader>
+              <CardTitle className="mb-7 w-full py-2 text-center text-3xl font-semibold">
+                Advanced
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className=" my-auto w-full">
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Up to 5000 Congregants
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Up to 50 Groups
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  10 group limit for each Congregant
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Unlimited notifications
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Unlimited events
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Text + audio devotions and Sermons
+                </li>
+              </ul>
+            </CardContent>
+            <CardFooter className="flex flex-col">
+              <p className="relative mx-auto my-auto w-fit px-3 text-center text-base">
+                <span className="text-lg font-light">Ksh.</span>
+                <span className="text-2xl font-semibold">5000</span>
+                <span className="text-lg font-light text-gray-600">/month</span>
+              </p>
+              <Button
+                variant="brand"
+                className="mx-auto w-fit cursor-pointer rounded-3xl px-5 py-2 mt-2"
+              >
+                GET NOW
+              </Button>
+            </CardFooter>
+          </Card>
+          <Card className="bg-neutral-950 text-white">
+            <CardHeader>
+              <CardTitle className="mb-7 w-full py-2 text-center text-3xl font-semibold">
+                Premium
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className=" my-auto w-full">
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Unlimited Congregants
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Unlimited Groups
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Unlimited groups for each Congregant
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Unlimited notifications
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Unlimited events
+                </li>
+                <li className="mb-2 flex flex-row align-middle">
+                  <IconCheck className="h-6 w-6 m-2 p-1 border-2 rounded-full" />
+                  Text, audio and video devotions <br/> and Sermons
+                </li>
+              </ul>
+            </CardContent>
+            <CardFooter className="flex flex-col">
+              <p className="relative mx-auto my-auto w-fit px-3 text-center text-base">
+                <span className="text-lg font-light">Ksh.</span>
+                <span className="text-2xl font-semibold">7500</span>
+                <span className="text-lg font-light text-gray-600">/month</span>
+              </p>
+              <Button
+                variant="ghost"
+                className="mx-auto mt-2 w-fit transform cursor-pointer rounded-3xl px-5 py-2 border border-gray-400"
+              >
+                GET NOW
+              </Button>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Pricing
+export default Pricing;
