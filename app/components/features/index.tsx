@@ -1,13 +1,4 @@
-import {
-  AvatarIcon,
-  BackpackIcon,
-  DashboardIcon,
-  DesktopIcon,
-  Link2Icon,
-  QuestionMarkCircledIcon,
-} from "@radix-ui/react-icons";
-
-import { IconAddressBook, IconCash, IconDeviceDesktop, IconHeartHandshake, IconLayoutDashboard, IconNetwork, IconUsersGroup } from "@tabler/icons-react"
+import { IconAddressBook, IconCash, IconDeviceDesktop, IconHeartHandshake, IconLayoutDashboard, IconNetwork } from "@tabler/icons-react"
 import React from "react";
 
 const Features: React.FC<object> = () => {
@@ -27,7 +18,7 @@ const Features: React.FC<object> = () => {
       <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:px-32">
         <div className="col-span-3 grid grid-cols-1 grid-rows-6 gap-8 md:grid-cols-3 md:grid-rows-2">
           <div className="rows-span-1 col-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-5 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 sm:px-8">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-5 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 sm:px-8">
               <div className="flex justify-center">
                 <IconDeviceDesktop className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
@@ -42,7 +33,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="rows-span-1 col-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
                 <IconAddressBook className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
@@ -57,7 +48,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="cols-span-1 rows-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
                 <IconNetwork className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
@@ -69,7 +60,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="rows-span-1 col-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 ">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 ">
               <div className="flex justify-center">
                 <IconHeartHandshake className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
@@ -81,7 +72,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="cols-span-1 rows-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
                 <IconCash className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
@@ -96,7 +87,7 @@ const Features: React.FC<object> = () => {
             </div>
           </div>
           <div className="cols-span-1 rows-span-1">
-            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-gray-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
+            <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
                 <IconLayoutDashboard className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
               </div>
