@@ -17,6 +17,7 @@ import {
 	useRevalidator,
 
 } from "@remix-run/react";
+import { Analytics } from "@vercel/analytics/react"
 
 import styles from "./tailwind.css";
 import { createSupabaseServerClient } from "~/lib/supabase/supabase.server";
@@ -76,6 +77,7 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
+				<Analytics />
 				<Outlet context={{ session, supabase }} />
 				<ScrollRestoration />
 				<Scripts />

@@ -20,6 +20,7 @@
     "@supabase/auth-helpers-remix": "^0.3.0",
     "@t3-oss/env-core": "^0.9.2",
     "@tabler/icons-react": "^2.47.0",
+    "@vercel/analytics": "^1.2.2",
     "@vercel/remix": "^2.5.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
