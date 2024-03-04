@@ -1,4 +1,11 @@
-import { IconAddressBook, IconCash, IconDeviceDesktop, IconHeartHandshake, IconLayoutDashboard, IconNetwork } from "@tabler/icons-react"
+import {
+  IconAddressBook,
+  IconCash,
+  IconDeviceDesktop,
+  IconHeartHandshake,
+  IconLayoutDashboard,
+  IconNetwork,
+} from "@tabler/icons-react";
 import React from "react";
 
 const Features: React.FC<object> = () => {
@@ -20,7 +27,10 @@ const Features: React.FC<object> = () => {
           <div className="rows-span-1 col-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-5 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 sm:px-8">
               <div className="flex justify-center">
-                <IconDeviceDesktop className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
+                <IconDeviceDesktop
+                  className="animate-slow-bounce rounded-full p-1 text-center"
+                  size={42}
+                />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">
                 Content Management
@@ -35,7 +45,10 @@ const Features: React.FC<object> = () => {
           <div className="rows-span-1 col-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
-                <IconAddressBook className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
+                <IconAddressBook
+                  className="animate-slow-bounce rounded-full p-1 text-center"
+                  size={42}
+                />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">
                 Congregant Directory
@@ -50,7 +63,10 @@ const Features: React.FC<object> = () => {
           <div className="cols-span-1 rows-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
-                <IconNetwork className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
+                <IconNetwork
+                  className="animate-slow-bounce rounded-full p-1 text-center"
+                  size={42}
+                />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">Direct Connection</h3>
               <p className="mx-5 mt-2 text-center text-sm">
@@ -62,7 +78,10 @@ const Features: React.FC<object> = () => {
           <div className="rows-span-1 col-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500 ">
               <div className="flex justify-center">
-                <IconHeartHandshake className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
+                <IconHeartHandshake
+                  className="animate-slow-bounce rounded-full p-1 text-center"
+                  size={42}
+                />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">Prayer Requests</h3>
               <p className="mx-5 mt-2 text-center text-sm">
@@ -74,13 +93,16 @@ const Features: React.FC<object> = () => {
           <div className="cols-span-1 rows-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
-                <IconCash className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
+                <IconCash
+                  className="animate-slow-bounce rounded-full p-1 text-center"
+                  size={42}
+                />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">
                 Financial Management
               </h3>
               <p className="mx-5 mt-2 text-center text-sm">
-                Minister enables you to track the financial details in your
+                Stewardly enables you to track the financial details in your
                 church. Whether from donations or from Sunday offerings, it is
                 all there.
               </p>
@@ -89,7 +111,10 @@ const Features: React.FC<object> = () => {
           <div className="cols-span-1 rows-span-1">
             <div className="align-center m-0 flex h-full w-full  flex-col rounded-md px-8 py-12 text-center shadow-xl bg-neutral-900 bg-opacity-30 hover:bg-opacity-70 transition-all duration-500">
               <div className="flex justify-center">
-                <IconLayoutDashboard className="animate-slow-bounce rounded-full p-1 text-center" size={42} />
+                <IconLayoutDashboard
+                  className="animate-slow-bounce rounded-full p-1 text-center"
+                  size={42}
+                />
               </div>
               <h3 className=" mt-4 text-[21px] font-bold">
                 User-friendly Interface

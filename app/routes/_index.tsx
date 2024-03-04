@@ -11,13 +11,12 @@ import Contact from "~/components/contact";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Minister Kenya" },
+    { title: "Stewardly Kenya" },
     { name: "description", content: "Your Digital Lamp On The Hill" },
   ];
 };
 
 export const action = async ({ request }: ActionFunctionArgs) => {
-
   const formData = await request.formData();
   const email = formData.get("email") as string;
 
@@ -28,7 +27,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
   const res = await client.from("invites").upsert({ email });
   // console.log({ res });
 
-  return json({ res })
+  return json({ res });
 };
 
 export default function Index() {

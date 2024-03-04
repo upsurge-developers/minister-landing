@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 const Pricing: React.FC<object> = () => {
   return (
     <section
-      className="bg-black text-white lg:h-[100vh] xl:h-[90vh]"
+      className="bg-black text-white lg:h-[100vh] xl:h-[90vh] pb-6"
       id="pricing"
     >
       <div className="container mx-auto flex flex-col pt-10 lg:pt-12">

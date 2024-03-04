@@ -1,5 +1,5 @@
-import React from 'react'
-import { SocialIcon } from 'react-social-icons'
+import React from "react";
+import { SocialIcon } from "react-social-icons";
 
 const Footer: React.FC<object> = () => {
   return (
@@ -15,12 +15,13 @@ const Footer: React.FC<object> = () => {
               className="mr-2 h-10 w-10"
             />
             <span className=" xs:text-xl text-base font-semibold">
-              Minister
+              Stewardly
             </span>
           </div>
           <div className="hidden lg:flex">
             <h3 className=" text-base text-slate-600">
-              © {new Date().getFullYear()} Minister, Kenya. All rights reserved.
+              © {new Date().getFullYear()} Stewardly, Kenya. All rights
+              reserved.
             </h3>
           </div>
           <div className="xs:gap-2 flex flex-row items-center gap-[6px]">
@@ -28,7 +29,7 @@ const Footer: React.FC<object> = () => {
               href="#"
               network="facebook"
               bgColor="#000"
-              color='#fff'
+              color="#fff"
               className="transform transition-all duration-200 ease-in-out hover:cursor-pointer hover:opacity-70"
             />
 
@@ -36,7 +37,7 @@ const Footer: React.FC<object> = () => {
               href="#"
               network="twitter"
               bgColor="#000"
-              color='#fff'
+              color="#fff"
               className="transform transition-all duration-200 ease-in-out hover:cursor-pointer hover:opacity-70"
             />
 
@@ -44,14 +45,14 @@ const Footer: React.FC<object> = () => {
               href="#"
               network="instagram"
               bgColor="#000"
-              color='#fff'
+              color="#fff"
               className="transform transition-all duration-200 ease-in-out hover:cursor-pointer hover:opacity-70"
             />
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button } from '../ui/button'
+import React from "react";
+import { Button } from "../ui/button";
 
 const NavigationBar: React.FC<object> = () => {
   return (
@@ -12,27 +12,24 @@ const NavigationBar: React.FC<object> = () => {
             src="https://via.placeholder.com/50"
             height={32}
             width={32}
-            alt="Minister Logo"
+            alt="Stewardly Logo"
             className="mr-2 h-8"
           />
           <span
             className={`font-sans text-xl font-bold tracking-wider min-[375px]:hidden min-[425px]:block text-white`}
           >
-            Minister
+            Stewardly
           </span>
         </a>
         <div className="flex items-center font-sans tracking-wider">
-          <Button variant="success" className="mr-4"
-          >
+          <Button variant="success" className="mr-4">
             Login
           </Button>
-          <Button variant="secondary">
-            Sign Up
-          </Button>
+          <Button variant="secondary">Sign Up</Button>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default NavigationBar
+export default NavigationBar;
